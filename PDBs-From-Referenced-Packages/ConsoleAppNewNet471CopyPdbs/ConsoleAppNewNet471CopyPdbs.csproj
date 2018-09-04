@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="ClassLibraryWithPdbs" Version="1.0.4" />
+    <PackageReference Include="ClassLibraryWithPdbs" Version="1.0.5" />
     <PackageReference Include="SourceLink.Copy.PdbFiles" Version="2.8.3" PrivateAssets="All" />
   </ItemGroup>
 </Project>
