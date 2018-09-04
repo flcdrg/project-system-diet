@@ -6,9 +6,9 @@ namespace ConsoleAppNewNet471
     {
         static void Main(string[] args)
         {
-            var cl = new ClassLibraryWithPdbs.Class1();
+            var lib = new ClassLibraryWithPdbs.Class1();
 
-            Console.WriteLine("Hello World!");
+            lib.OhDear();
         }
     }
 }

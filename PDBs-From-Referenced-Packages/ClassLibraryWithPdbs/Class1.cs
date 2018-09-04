@@ -8,5 +8,10 @@ namespace ClassLibraryWithPdbs
         {
             Console.WriteLine("Creating Class1");
         }
+
+        public void OhDear()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
