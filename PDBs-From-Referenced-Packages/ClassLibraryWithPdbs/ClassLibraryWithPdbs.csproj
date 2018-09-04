@@ -3,11 +3,16 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.0.3</Version>
+    <Version>1.0.4</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(DebugType)' == 'portable'">
     <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
 
 </Project>
