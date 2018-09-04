@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net471</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="TextFileNew.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="TextFileNew.txt">
+      <PackagePath>content/Special;contentFiles/any/$(TargetFramework)/Special</PackagePath>
+    </Content>
+  </ItemGroup>
+
+</Project>
