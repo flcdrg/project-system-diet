@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net45</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <IsTool>true</IsTool>
+
+    <!-- Uncomment code to include referenced assembly-->
+    <!--<TargetsForTfmSpecificBuildOutput>$(TargetsForTfmSpecificBuildOutput);PackReferencedProjectOutputs</TargetsForTfmSpecificBuildOutput>-->
+
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ClassLibraryA\ClassLibraryA.csproj">
+      <!-- Uncomment code to not add package dependency -->
+      <!--<PrivateAssets>all</PrivateAssets>-->
+    </ProjectReference>
+  </ItemGroup>
+
+  <!-- Uncomment code to include referenced assembly-->
+
+  <!--<Target Name="PackReferencedProjectOutputs" DependsOnTargets="BuildOnlySettings;ResolveReferences">
+    <ItemGroup>
+      <BuildOutputInPackage Include="@(ReferenceCopyLocalPaths->WithMetadataValue('ReferenceSourceTarget', 'ProjectReference'))" />
+    </ItemGroup>
+  </Target>-->
+  
+</Project>
