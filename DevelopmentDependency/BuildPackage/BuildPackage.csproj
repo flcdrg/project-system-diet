@@ -5,8 +5,10 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     
     <!-- Don't include .dll in NuGet package -->
-    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <!--<IncludeBuildOutput>false</IncludeBuildOutput>-->
     <DevelopmentDependency>true</DevelopmentDependency>
+    <Version>1.0.2</Version>
+    <Description>A package that only has build-time files</Description>
   </PropertyGroup>
 
   <ItemGroup>
