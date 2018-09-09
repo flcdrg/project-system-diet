@@ -2,12 +2,15 @@
 # chocolatey
 if (Test-Path "..\choco") {
     Push-Location ..\choco
+    git checkout -- *
     git clean -xdf
 
     & .\build.debug.bat
 
     Invoke-Item src\chocolatey.sln
     
+    code .
+
     Pop-Location
 }
 
@@ -20,6 +23,7 @@ $projects = @(
     '.\9 - Project-References-In-Packages-As-Assemblies'
 );
 
+git checkout -- *
 git clean -xdf
 
 # Remove any existing versions of this package
@@ -42,3 +46,5 @@ $projects | ForEach-Object {
 [Diagnostics.Process]::Start('https://github.com/onovotny/MSBuildSdkExtras')
 [Diagnostics.Process]::Start('https://github.com/davkean/maket')
 [Diagnostics.Process]::Start('https://docs.microsoft.com/en-us/dotnet/core/tools/csproj#nuget-metadata-properties')
+
+code .
