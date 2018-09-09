@@ -38,3 +38,7 @@ $projects | ForEach-Object {
     Get-ChildItem $_ -Filter *.sln | Invoke-Item
 }
 
+[Diagnostics.Process]::Start('https://github.com/dotnet/project-system')
+[Diagnostics.Process]::Start('https://github.com/onovotny/MSBuildSdkExtras')
+[Diagnostics.Process]::Start('https://github.com/davkean/maket')
+[Diagnostics.Process]::Start('https://docs.microsoft.com/en-us/dotnet/core/tools/csproj#nuget-metadata-properties')
