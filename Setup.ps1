@@ -5,6 +5,8 @@ if (Test-Path "..\choco") {
     git checkout -- *
     git clean -xdf
 
+    nuget restore
+    
     & .\build.debug.bat
 
     Invoke-Item src\chocolatey.sln
