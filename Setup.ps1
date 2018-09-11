@@ -5,7 +5,7 @@ if (Test-Path "..\choco") {
     git checkout -- *
     git clean -xdf
 
-    nuget restore
+    nuget restore src
     
     & .\build.debug.bat
 
