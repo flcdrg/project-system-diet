@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<Project>
-  <Target Name="Example" AfterTargets="AfterBuild">
-    <Warning Text="This is a warning!" />
-  </Target>
-</Project>

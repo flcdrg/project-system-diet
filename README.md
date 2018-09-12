@@ -10,14 +10,14 @@ Example projects and files from David's presentation on the new .NET Project Sys
    - See also https://github.com/davkean/maket
 4. Custom Sdk packages 
    - [MSBuildSdkExtras](https://github.com/onovotny/MSBuildSdkExtras)
-5. [Including Build-Generated files](5%20-%20Including-BuildGenerated-Files)
-6. [Output paths](6%20-%20OutputPath-Tfm)
+5. [Including Build-Generated files](2%20-%20Including-BuildGenerated-Files)
+6. [Output paths](3%20-%20OutputPath-Tfm)
 7. Making NuGet packages
-   - [NuGet content vs contentFiles](2%20-%20NuGet-ContentFiles)
-   - [Project references in packages as assemblies](9%20-%20Project-References-In-Packages-As-Assemblies)
+   - [NuGet content vs contentFiles](4%20-%20NuGet-ContentFiles)
+   - [Project references in packages as assemblies](5%20-%20Project-References-In-Packages-As-Assemblies)
    - Including PDBs in packages
-   - [Copying PDBs from referenced packages](7%20-%20PDBs-From-Referenced-Packages)
+   - [Copying PDBs from referenced packages](6%20-%20PDBs-From-Referenced-Packages)
 8. SourceLink
    - Adding support - https://github.com/dotnet/sourcelink
-   - Example debugging with supported package
+   - [Example debugging stepping in to package source code](7%20-%20SourceLink-Consuming)
 
