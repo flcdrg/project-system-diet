@@ -16,14 +16,7 @@ if (Test-Path "..\choco") {
     Pop-Location
 }
 
-$projects = @(
-    ".\2 - NuGet-ContentFiles",
-    ".\5 - Including-BuildGenerated-Files",
-    ".\6 - OutputPath-Tfm",
-    '.\7 - PDBs-From-Referenced-Packages',
-    '.\8 - SourceLink Consuming',
-    '.\9 - Project-References-In-Packages-As-Assemblies'
-);
+$projects = (Get-ChildItem -Depth 0 -Directory).Name
 
 git checkout -- *
 git clean -xdf
@@ -34,7 +27,7 @@ if (Test-Path "$env:USERPROFILE\.nuget\packages\classlibrarywithpdbs\") {
 }
 
 # This one is special
-dotnet build "7 - PDBs-From-Referenced-Packages\ClassLibraryWithPdbs"
+dotnet build "6 - PDBs-From-Referenced-Packages\ClassLibraryWithPdbs"
 
 $projects | ForEach-Object { 
     nuget restore $_
